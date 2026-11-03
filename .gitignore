@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+build/
+next-env.d.ts
+
+# environment
+.env
+.env.*
+!.env.example
+
+# obsidian vault
+jca-mock-exam-vault/
+
+# tests / tooling
+coverage/
+*.tsbuildinfo
+
+# os
+.DS_Store
+Thumbs.db
