@@ -89,6 +89,25 @@ Each route was fetched with an authenticated session and returned HTTP 200:
 - [x] `/attempt/[id]` for a submitted attempt redirects to its result (307)
 - [x] `/admin` as a non-admin redirects away (307)
 
+## Live deployment
+
+Verified on <https://jca-mock-exam.onrender.com> on 2026-11-04:
+
+- [x] `GET /api/health` returns `ok: true`, 665 published questions
+- [x] Login page and compiled CSS load over HTTPS
+- [x] Admin login (`admin` / `admin`) works; admin overview and user list render
+- [x] Six accounts are seeded: `admin`, `user1`..`user5`
+- [x] Candidate login (`user1` / `test1`) works
+- [x] A full mock is created with 100 questions across 7 sections
+- [x] An answer autosaves
+- [x] Submission stores a score and marks the attempt submitted
+- [x] The result page renders the full question review
+- [x] Admin overview sees the candidate's new submission
+- [x] Candidate reset removes the test attempt; admin overview returns to zero
+- [x] User1 gets 404 reading user2's attempt
+- [x] Non-admin gets 403 on admin API endpoints
+- [x] Test data was cleaned up after verification
+
 ## Manual browser checks still recommended after deployment
 
 These need a real browser and are listed so they are not forgotten:

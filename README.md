@@ -2,6 +2,10 @@
 
 A private, multi-user mock-exam platform for the Supreme Court of India **Junior Court Assistant (JCA)** paper. It runs on Next.js with MongoDB, supports credential login for five candidates plus an administrator, and gives the administrator a performance dashboard across every account.
 
+**Live:** <https://jca-mock-exam.onrender.com>
+
+> The Render free instance sleeps after inactivity, so the first request after a quiet period can take up to a minute.
+
 ## What it does
 
 - **Full mocks** use the 2026 pattern: 100 questions across 7 sections in 90 minutes.
@@ -148,6 +152,8 @@ npm test
 ```
 
 ## Deploy on Render
+
+**Deployed:** <https://jca-mock-exam.onrender.com> (Blueprint from `render.yaml`).
 
 A Render Blueprint is included in [`render.yaml`](./render.yaml).
 
